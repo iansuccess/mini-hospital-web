@@ -6,6 +6,7 @@ body {
   align-items: flex-start;
   padding: 20px;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
   width: 420px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   animation: fadeIn 0.6s ease;
+  margin: 0 auto;
 }
 
 h1 {
@@ -94,3 +96,15 @@ input {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* 🖋️ Signature footer */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+  opacity: 0.8;
+}
+
