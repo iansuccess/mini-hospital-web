@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Patient Record System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Hospital Patient Record System</h1>
+
+    <div class="menu">
+      <button onclick="showSection('add')">Add Patient</button>
+      <button onclick="showSection('display')">Display All</button>
+      <button onclick="showSection('search')">Search</button>
+      <button onclick="showSection('member')">See Member</button>
+    </div>
+
+    <div id="add" class="section">
+      <h2>Add Patient</h2>
+      <input id="name" placeholder="Name">
+      <input id="age" type="number" placeholder="Age">
+      <input id="illness" placeholder="Illness">
+      <input id="doctor" placeholder="Doctor Assigned">
+      <input id="date" type="date" placeholder="Date Visited">
+      <button onclick="addPatient()">Add Record</button>
+    </div>
+
+    <div id="display" class="section">
+      <h2>All Patient Records</h2>
+      <div id="patientList"></div>
+    </div>
+
+    <div id="search" class="section">
+      <h2>Search Patient</h2>
+      <input id="searchName" placeholder="Enter patient name">
+      <button onclick="searchPatient()">Search</button>
+      <div id="searchResult"></div>
+    </div>
+
+    <div id="member" class="section">
+      <h2>Team Member</h2>
+      <img src="https://i.ibb.co/0VYxY5jG/pic-namin.jpg" alt="Member Picture" class="member-image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
